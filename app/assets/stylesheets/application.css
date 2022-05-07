@@ -78,3 +78,14 @@
   margin-top:10px;
 }
 /*編集画面*/
+
+.index-header{
+  width:100%;
+  margin:20px;
+}
+
+td{
+  padding:5px;
+}
+
+/*一覧画面*/
