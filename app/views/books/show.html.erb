@@ -4,13 +4,20 @@
  </div>
 <% end %>
 
+<div class = "show-main">
+ <div class = "show-main-title">
+  <strong>Title:</strong>
+  <p><%= @book.title %></p>
+ </div>
 
-<p>Title:</p>
-<p><%= @book.title %></p>
+ <div class = "show-main-body">
+  <strong>Body:</strong>
+  <p><%= @book.body %></p>
+ </div>
+</div>
 
-<p>Body:</p>
-<p><%= @book.body %></p>
-
-<%= link_to "Edit", edit_book_path(@book.id) %>
-<%= link_to "Back", '/books' %>
-
+<div class = "show-link">
+ <%= link_to "Edit", edit_book_path(@book.id) %>
+ |
+ <%= link_to "Back", '/books' %>
+</div>
