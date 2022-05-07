@@ -1,10 +1,16 @@
-<h1>投稿一覧</h1>
+<h1>Books</h1>
 
 <% @books.each do |book| %>
 
-<p>タイトル</p>
-<span>
-  <%= link_to book.title, book_path(book.id) %>
-</span>
+<h4>Title</h4>
+<span><%= book.title %></span>
+
+<h4>Body</h4>
+<span><%= book.title %></span>
+
+<%= link_to "Show", book_path(@books) %>
+<%= link_to "Edit", edit_book_path(@books) %>
+<%= link_to "Destroy", book_path(@books), method: :delete, "date-confirm" => "本当に削除しますか？" %>
+
 
 <% end %>
