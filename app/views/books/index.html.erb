@@ -6,11 +6,10 @@
 <span><%= book.title %></span>
 
 <h4>Body</h4>
-<span><%= book.title %></span>
+<span><%= book.body %></span>
 
-<%= link_to "Show", book_path(@books) %>
-<%= link_to "Edit", edit_book_path(@books) %>
-<%= link_to "Destroy", book_path(@books), method: :delete, "date-confirm" => "本当に削除しますか？" %>
-
+<%= link_to "Show", book_path(book.id) %>
+<%= link_to "Edit", edit_book_path(book.id) %>
+<%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "Are you sure?" %>
 
 <% end %>
